@@ -5,7 +5,7 @@ import Button from '../common/Button';
 
 const Hero = ({
     title = "Pixel-Perfect ",
-    highlightText = "WEbsite Development",
+    highlightText = "Website Development",
     titleSuffix = " That Grows Your Brand",
     description = "I help businesses scale with clean, user-friendly, high-performance Webflow websites designed to convert and impress.",
     primaryBtnText = "Start Your Project",
