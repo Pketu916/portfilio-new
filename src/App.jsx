@@ -11,6 +11,7 @@ import Navbar from './components/common/Navbar';
 import Footer from './components/common/Footer';
 import ScrollToTop from './components/common/ScrollToTop';
 import { Analytics } from "@vercel/analytics/react";
+import { SpeedInsights } from "@vercel/speed-insights/react";
 import './index.css';
 
 function App() {
@@ -34,10 +35,10 @@ function App() {
         </main>
         <Footer />
         <Analytics />
+        <SpeedInsights />
       </div>
     </Router>
   );
 }
 
 export default App;
-
