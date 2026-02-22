@@ -8,7 +8,7 @@ const benefits = [
     { title: "No Design Limits", desc: "100% custom designs without rigid templates." },
     { title: "Easy CMS", desc: "Manage and update your content effortlessly." },
     { title: "Secure Hosting", desc: "Enterprise-grade hosting that scales with you." },
-    { title: "Start Your Project", desc: "Let's build something amazing together.", isCta: true, link: "https://wa.me/9265650606" }
+    { title: "Start Your Project", desc: "Let's build something amazing together.", isCta: true, link: "https://wa.me/9265650606?text=Hi%20Ketu%2C%20I%E2%80%99d%20like%20to%20discuss%20a%20website%20project%20with%20you." }
 ];
 
 const WebflowInfo = () => {

@@ -28,7 +28,7 @@ const Contact = () => {
                             </p>
 
                             <div className="flex flex-wrap gap-4 md:gap-6">
-                                <Button href="https://wa.me/9265650606" variant="secondary" className="!px-8 !py-4 text-lg">
+                                <Button href="https://wa.me/9265650606?text=Hi%20Ketu%2C%20I%E2%80%99d%20like%20to%20discuss%20a%20website%20project%20with%20you." variant="secondary" className="!px-8 !py-4 text-lg">
                                     WhatsApp
                                 </Button>
                                 <Button href="mailto:pketu916@gmail.com" variant="secondary" className="!px-8 !py-4 text-lg">

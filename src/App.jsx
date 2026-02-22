@@ -10,6 +10,7 @@ import TermsOfService from './pages/TermsOfService';
 import Navbar from './components/common/Navbar';
 import Footer from './components/common/Footer';
 import ScrollToTop from './components/common/ScrollToTop';
+import { Analytics } from "@vercel/analytics/react";
 import './index.css';
 
 function App() {
@@ -32,11 +33,11 @@ function App() {
           </Routes>
         </main>
         <Footer />
+        <Analytics />
       </div>
     </Router>
   );
 }
 
 export default App;
-
 

@@ -9,7 +9,7 @@ const Hero = ({
     titleSuffix = " That Grows Your Brand",
     description = "I help businesses scale with clean, user-friendly, high-performance Webflow websites designed to convert and impress.",
     primaryBtnText = "Start Your Project",
-    primaryBtnLink = "https://wa.me/9265650606",
+    primaryBtnLink = "https://wa.me/9265650606?text=Hi%20Ketu%2C%20I%E2%80%99d%20like%20to%20discuss%20a%20website%20project%20with%20you.",
     secondaryBtnText = "View My Work",
     secondaryBtnLink = "/work",
     imageSrc = "/hero-image.png",

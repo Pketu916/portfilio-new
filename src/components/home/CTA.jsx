@@ -17,7 +17,7 @@ const CTA = () => {
                         </p>
                     </div>
                     <div className="lg:w-1/3 flex flex-col items-center lg:items-end gap-6 w-full">
-                        <Button variant="primary" href="https://wa.me/9265650606" className="px-10 py-5 text-xl w-full lg:w-auto">
+                        <Button variant="primary" href="https://wa.me/9265650606?text=Hi%20Ketu%2C%20I%E2%80%99d%20like%20to%20discuss%20a%20website%20project%20with%20you." className="px-10 py-5 text-xl w-full lg:w-auto">
                             Start Your Project
                         </Button>
                         <Button variant="secondary" href="/work" className="px-10 py-5 text-xl w-full lg:w-auto">

@@ -30,7 +30,7 @@ const Footer = () => {
                         <div className="flex flex-col gap-3">
                             <h4 className="text-2xl font-bold mb-2 text-white">Connect</h4>
                             <a href="https://www.linkedin.com/in/ketu-patel-b9a104232/" target="_blank" rel="noopener noreferrer" className="text-lg text-gray-400 hover:text-color-primary transition-colors">LinkedIn</a>
-                            <a href="https://wa.me/919265650606" target="_blank" rel="noopener noreferrer" className="text-lg text-gray-400 hover:text-color-primary transition-colors">WhatsApp</a>
+                            <a href="https://wa.me/919265650606?text=Hi%20Ketu%2C%20I%E2%80%99d%20like%20to%20discuss%20a%20website%20project%20with%20you." target="_blank" rel="noopener noreferrer" className="text-lg text-gray-400 hover:text-color-primary transition-colors">WhatsApp</a>
                             <a href="https://www.instagram.com/k2__patel_/" target="_blank" rel="noopener noreferrer" className="text-lg text-gray-400 hover:text-color-primary transition-colors">Instagram</a>
                             <a href="mailto:pketu916@gmail.com" className="text-lg text-gray-400 hover:text-color-primary transition-colors">Email Me</a>
                         </div>
