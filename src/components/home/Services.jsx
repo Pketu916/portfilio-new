@@ -39,8 +39,8 @@ const Services = () => {
                 const label = `step-${i}`;
 
                 // Image transitions
-                tl.to(images[i - 1], { autoAlpha: 0, duration: 0.5 }, label);
-                tl.to(images[i], { autoAlpha: 1, duration: 0.5 }, label);
+                tl.to(images[i - 1], { autoAlpha: 0, duration: 1, ease: "power2.inOut" }, label);
+                tl.to(images[i], { autoAlpha: 1, duration: 1, ease: "power2.inOut" }, label);
 
                 // Card entry
                 tl.fromTo(card,
