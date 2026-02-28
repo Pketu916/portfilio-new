@@ -19,7 +19,7 @@ const ValueProposition = () => {
                         ease: "none",
                     }).pause();
 
-                    li.addEventListener('mouseenter', () => tween.play());
+                    li.addEventListener('mouseover', () => tween.play());
                     li.addEventListener('mouseleave', () => tween.pause());
                 }
             });
@@ -52,12 +52,12 @@ const ValueProposition = () => {
                         I create:
                     </h3>
                 </Container>
-                <ul className="list-none p-0 w-full border-t border-black">
+                <ul className="list-none p-0 w-full border-t">
                     {items.map((item, index) => (
                         <li
                             key={index}
                             ref={el => listRefs.current[index] = el}
-                            className="group relative overflow-hidden text-[clamp(1.25rem,3vw,1.75rem)] border-b border-black cursor-pointer hover:bg-color-primary hover:text-white transition-colors duration-300 w-full"
+                            className="group relative overflow-hidden text-[clamp(1.25rem,3vw,1.75rem)] border-b cursor-pointer hover:bg-color-primary hover:text-white transition-all duration-300 w-full"
                         >
                             <Container>
                                 <div className="py-6 flex items-center gap-4 group-hover:opacity-0 transition-opacity duration-300 w-full">

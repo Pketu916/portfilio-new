@@ -68,7 +68,7 @@ const WhyChooseMe = () => {
             <Section id="why-choose-me" className="min-h-screen flex flex-col justify-center">
                 <Container className="mb-16">
                     <h2 className="text-[clamp(2.5rem,5vw,4rem)] font-bold">
-                        Why Choose <span className="text-color-primary italic">Me</span>
+                        Why I’m the <span className="text-color-primary italic"> Right Fit</span>
                     </h2>
                 </Container>
 

@@ -1,0 +1,7 @@
+38f5510 feat: add vercel speed insights
+24bdacf fix(hero): correct capitalization of 'Website Development'
+8d20582 chore: minor updates
+375e86a feat: add Vercel Analytics and update WhatsApp CTAs with draft message
+739224a fix: Sync Service section animations and add service illustrations
+e2b4c1a feat: Add custom projects, favicon, SEO attributes, and bugfixes
+3662193 Initial commit

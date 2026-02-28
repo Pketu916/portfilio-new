@@ -10,34 +10,39 @@ import TermsOfService from './pages/TermsOfService';
 import Navbar from './components/common/Navbar';
 import Footer from './components/common/Footer';
 import ScrollToTop from './components/common/ScrollToTop';
+import CustomCursor from './components/common/CustomCursor';
 import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/react";
+import { ReactLenis } from 'lenis/react';
 import './index.css';
 
 function App() {
   return (
-    <Router>
-      <ScrollToTop />
-      {/* App wrapper to ensure footer stays at bottom if content is short */}
-      <div className="min-h-screen flex flex-col">
-        <Navbar />
-        {/* Added pt-20 to offset the fixed navbar height */}
-        <main className="main-wrapper pt-20 flex-grow">
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/service" element={<Service />} />
-            <Route path="/work" element={<Work />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/contact" element={<Contact />} />
-            <Route path="/privacy-policy" element={<PrivacyPolicy />} />
-            <Route path="/terms-of-service" element={<TermsOfService />} />
-          </Routes>
-        </main>
-        <Footer />
-        <Analytics />
-        <SpeedInsights />
-      </div>
-    </Router>
+    <ReactLenis root>
+      <Router>
+        <ScrollToTop />
+        <CustomCursor />
+        {/* App wrapper to ensure footer stays at bottom if content is short */}
+        <div className="min-h-screen flex flex-col">
+          <Navbar />
+          {/* Added pt-20 to offset the fixed navbar height */}
+          <main className="main-wrapper pt-20 flex-grow">
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/service" element={<Service />} />
+              <Route path="/work" element={<Work />} />
+              <Route path="/about" element={<About />} />
+              <Route path="/contact" element={<Contact />} />
+              <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+              <Route path="/terms-of-service" element={<TermsOfService />} />
+            </Routes>
+          </main>
+          <Footer />
+          <Analytics />
+          <SpeedInsights />
+        </div>
+      </Router>
+    </ReactLenis>
   );
 }
 
