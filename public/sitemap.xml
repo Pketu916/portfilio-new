@@ -1,37 +1,42 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://yourwebsite.com/</loc>
+    <loc>https://ketuportfolio.vercel.app/</loc>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
+
   <url>
-    <loc>https://yourwebsite.com/about</loc>
+    <loc>https://ketuportfolio.vercel.app/about</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
+
   <url>
-    <loc>https://yourwebsite.com/service</loc>
+    <loc>https://ketuportfolio.vercel.app/service</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
+
   <url>
-    <loc>https://yourwebsite.com/work</loc>
+    <loc>https://ketuportfolio.vercel.app/work</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
+
   <url>
-    <loc>https://yourwebsite.com/contact</loc>
+    <loc>https://ketuportfolio.vercel.app/contact</loc>
     <changefreq>yearly</changefreq>
     <priority>0.8</priority>
   </url>
+
   <url>
-    <loc>https://yourwebsite.com/privacy-policy</loc>
+    <loc>https://ketuportfolio.vercel.app/privacy-policy</loc>
     <changefreq>yearly</changefreq>
     <priority>0.5</priority>
   </url>
+
   <url>
-    <loc>https://yourwebsite.com/terms-of-service</loc>
+    <loc>https://ketuportfolio.vercel.app/terms-of-service</loc>
     <changefreq>yearly</changefreq>
     <priority>0.5</priority>
   </url>
