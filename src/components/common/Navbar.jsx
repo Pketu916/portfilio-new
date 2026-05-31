@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import Container from '../layout/Container';
-import menuBg from '../../assets/services/service-3.png'; // Using an abstract service image for the menu background
 
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -86,25 +85,19 @@ const Navbar = () => {
 
             {/* Mobile Menu Dropdown */}
             <div
-                className={`fixed inset-0 bg-black transition-transform duration-500 ease-in-out transform ${isOpen ? 'translate-y-0' : '-translate-y-full'
+                className={`fixed inset-0 bg-white border-b-2 border-black transition-transform duration-500 ease-in-out transform ${isOpen ? 'translate-y-0' : '-translate-y-full'
                     } md:hidden flex flex-col justify-center items-center z-40`}
             >
-                {/* Background Image with Dark Overlay */}
-                <div
-                    className="absolute inset-0 opacity-40 z-0 bg-cover bg-center bg-no-repeat"
-                    style={{ backgroundImage: `url(${menuBg})` }}
-                ></div>
-
-                <div className="flex flex-col gap-8 text-center mt-16 z-10 w-full px-6">
+                <div className="flex flex-col gap-6 text-center mt-16 z-10 w-full px-6">
                     {navLinks.map((link, index) => (
                         <div
                             key={link.name}
-                            className={`border-b border-white/20 pb-4 w-full transform transition-all duration-500 delay-${index * 100} ${isOpen ? 'translate-y-0 opacity-100' : 'translate-y-8 opacity-0'}`}
+                            className={`border-b border-black/10 pb-3 w-full transform transition-all duration-500 delay-${index * 100} ${isOpen ? 'translate-y-0 opacity-100' : 'translate-y-8 opacity-0'}`}
                         >
                             <Link
                                 to={link.path}
                                 onClick={() => setIsOpen(false)}
-                                className={`text-4xl font-bold transition-colors block ${isActive(link.path) ? 'text-color-primary italic' : 'text-white hover:text-color-primary'
+                                className={`text-2xl font-bold transition-colors block ${isActive(link.path) ? 'text-color-primary italic' : 'text-color-dark hover:text-color-primary'
                                     }`}
                             >
                                 {link.name}

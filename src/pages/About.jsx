@@ -1,15 +1,32 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Section from '../components/layout/Section';
 import Container from '../components/layout/Container';
 import Button from '../components/common/Button';
 import CTA from '../components/home/CTA';
 import WebflowInfo from '../components/home/WebflowInfo';
 import Technologies from '../components/service/Technologies';
+import SEO from '../components/common/SEO';
 
 
 const About = () => {
+    useEffect(() => {
+        const link = document.createElement('link');
+        link.rel = 'preload';
+        link.as = 'image';
+        link.href = '/about-image.png';
+        link.setAttribute('fetchpriority', 'high');
+        document.head.appendChild(link);
+
+        return () => {
+            if (link.parentNode) {
+                link.parentNode.removeChild(link);
+            }
+        };
+    }, []);
+
     return (
         <>
+            <SEO pageKey="about" />
             <Section id="about-hero" className="bg-[#f0f0f0] border-b-2 min-h-[80vh] flex items-center">
                 <Container>
                     <div className="flex flex-col lg:flex-row gap-12 lg:gap-24 items-center">
@@ -44,6 +61,9 @@ const About = () => {
                                 <img
                                     src="/about-image.png"
                                     alt="About Ketu Patel"
+                                    fetchPriority="high"
+                                    loading="eager"
+                                    decoding="async"
                                     className="relative z-10 w-full h-auto object-cover border-2 border-black filter transition-all duration-500 max-h-[600px]"
                                 />
                             </div>

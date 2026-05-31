@@ -4,10 +4,12 @@ import Services from '../components/home/Services';
 import Technologies from '../components/service/Technologies';
 import ValueProposition from '../components/home/ValueProposition';
 import Cta from '../components/home/CTA';
+import SEO from '../components/common/SEO';
 
 const Service = () => {
     return (
         <>
+            <SEO pageKey="service" />
             <div className="pt-12">
                 <Hero
                     title="Build a Website That "

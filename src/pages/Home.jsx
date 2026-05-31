@@ -6,10 +6,12 @@ import WebflowInfo from '../components/home/WebflowInfo';
 import Projects from '../components/home/Projects';
 import Services from '../components/home/Services';
 import CTA from '../components/home/CTA';
+import SEO from '../components/common/SEO';
 
 const Home = () => {
     return (
         <>
+            <SEO pageKey="home" />
             <Hero />
             <ValueProposition />
             <WhyChooseMe />

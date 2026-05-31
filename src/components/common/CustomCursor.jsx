@@ -11,7 +11,7 @@ const CustomCursor = () => {
         const cursorDot = cursorDotRef.current;
 
         // Set initial position
-        gsap.set(cursorDot, { x: window.innerWidth / 2, y: window.innerHeight / 2, xPercent: -50, yPercent: -50 });
+        gsap.set(cursorDot, { x: window.innerWidth / 2, y: window.innerHeight / 2, xPercent: -50, yPercent: -50, scale: 1 });
 
         // Mouse move event
         let mouseX = window.innerWidth / 2;
@@ -36,17 +36,17 @@ const CustomCursor = () => {
             });
         });
 
-        // Hover effects on links and buttons
+        // Hover effects on links and buttons - scale custom dot on interactables
         const handleHoverEnter = () => {
             gsap.to(cursorDot, {
-                opacity: 0,
+                scale: 1.8,
                 duration: 0.3
             });
         };
 
         const handleHoverLeave = () => {
             gsap.to(cursorDot, {
-                opacity: 1,
+                scale: 1,
                 duration: 0.3
             });
         };
@@ -73,16 +73,6 @@ const CustomCursor = () => {
                 el.removeEventListener('mouseenter', handleHoverEnter);
                 el.removeEventListener('mouseleave', handleHoverLeave);
             });
-        };
-    }, []);
-
-    // Also hide default cursor when component mounts
-    useEffect(() => {
-        if (!window.matchMedia("(pointer: coarse)").matches) {
-            document.body.style.cursor = 'none';
-        }
-        return () => {
-            document.body.style.cursor = 'auto';
         };
     }, []);
 

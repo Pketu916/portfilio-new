@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Section from '../layout/Section';
 import Container from '../layout/Container';
 import Button from '../common/Button';
@@ -15,6 +15,21 @@ const Hero = ({
     imageSrc = "/hero-image.png",
     imageAlt = "Ketu Patel - Web Developer"
 }) => {
+    useEffect(() => {
+        const link = document.createElement('link');
+        link.rel = 'preload';
+        link.as = 'image';
+        link.href = imageSrc;
+        link.setAttribute('fetchpriority', 'high');
+        document.head.appendChild(link);
+
+        return () => {
+            if (link.parentNode) {
+                link.parentNode.removeChild(link);
+            }
+        };
+    }, [imageSrc]);
+
     return (
         <Section id="hero" className="relative overflow-hidden pt-12 md:pt-24 pb-16">
             <Container>
@@ -51,6 +66,9 @@ const Hero = ({
                             <img
                                 src={imageSrc}
                                 alt={imageAlt}
+                                fetchPriority="high"
+                                loading="eager"
+                                decoding="async"
                                 className="relative z-10 w-full h-auto object-cover bg-white border-2 border-black max-h-[600px]"
                             />
                         </div>

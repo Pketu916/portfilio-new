@@ -13,7 +13,7 @@
 
   /* Spacing (Client-First inspired) */
   --padding-global: 5%;
-  --container-large: 80rem;
+  --container-large: 90rem;
   --section-padding-large: 8rem;
   --section-padding-medium: 5rem;
 
@@ -58,7 +58,7 @@ body {
   }
 
   .container-large {
-    @apply w-full max-w-[80rem] mx-auto;
+    @apply w-full max-w-[90rem] mx-auto;
   }
 
   .padding-section-large {

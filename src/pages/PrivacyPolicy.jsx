@@ -1,9 +1,12 @@
 import React from 'react';
 import Section from '../components/layout/Section';
 import Container from '../components/layout/Container';
+import SEO from '../components/common/SEO';
 
 const PrivacyPolicy = () => {
     return (
+        <>
+            <SEO pageKey="privacy-policy" />
         <Section className="py-24">
             <Container>
                 <div className="max-w-4xl mx-auto">
@@ -20,7 +23,7 @@ const PrivacyPolicy = () => {
 
                         <h2 className="text-2xl font-bold text-black mt-8 mb-4">1. Information We Collect</h2>
                         <p>
-                            We only collect information about you if we have a reason to do so—for example, to provide our services, to communicate with you, or to make our services better. This may include:
+                            We only collect information about you if we have a reason to do so-for example, to provide our services, to communicate with you, or to make our services better. This may include:
                         </p>
                         <ul className="list-disc pl-6 space-y-2">
                             <li><strong>Contact Information:</strong> Name, email address, phone number (e.g., if you contact via WhatsApp or Email).</li>
@@ -56,6 +59,7 @@ const PrivacyPolicy = () => {
                 </div>
             </Container>
         </Section>
+        </>
     );
 };
 

@@ -1,9 +1,12 @@
 import React from 'react';
 import Section from '../components/layout/Section';
 import Container from '../components/layout/Container';
+import SEO from '../components/common/SEO';
 
 const TermsOfService = () => {
     return (
+        <>
+            <SEO pageKey="terms-of-service" />
         <Section className="py-24">
             <Container>
                 <div className="max-w-4xl mx-auto">
@@ -56,6 +59,7 @@ const TermsOfService = () => {
                 </div>
             </Container>
         </Section>
+        </>
     );
 };
 

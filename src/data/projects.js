@@ -1,58 +1,91 @@
-import project1 from '../assets/projects/project-1.png';
-import project2 from '../assets/projects/project-2.png';
-import project3 from '../assets/projects/project-3.png';
-import project4 from '../assets/projects/project-4.png';
-import project5 from '../assets/projects/project-5.png';
+import sellersUmbrella from '../assets/project/Sellers Umbrella.webp';
+import generalOrbit from '../assets/project/generalorbit.png';
+import myjucas from '../assets/project/myjucas.webp';
+import deepBuilders from '../assets/project/deepgroup.png';
+import merchantXporter from '../assets/project/MerchantXporter.webp';
+import tarakshLaw from '../assets/project/taraksh.webp';
+import adamLeipzig from '../assets/project/adamleipzig.png';
+import insideVoice from '../assets/project/insidevoiceco.png';
 
 export const projects = [
     {
         id: 1,
-        title: "Luxe Furnishings",
-        category: "E-commerce",
-        description: "A high-end furniture brand's digital experience, focusing on minimalist design and seamless shopping.",
-        image: project1,
-        features: ["Custom Webflow E-commerce", "Advanced CMS Filtering", "GSAP Animations"],
+        title: "Sellers Umbrella",
+        category: "Webflow",
+        description: "A horizontally structured Webflow site for Amazon seller services - wide layouts, clear section flow, and conversion-focused pages built for a specialized industry audience.",
+        image: sellersUmbrella,
+        features: ['GSAP', 'CMS', 'Webflow', 'Horizontal'],
         showInHome: true,
-        link: null
+        link: "https://sellersumbrella.com/"
     },
     {
         id: 2,
-        title: "FinTrack Dashboard",
-        category: "Fintech",
-        description: "Advanced analytics dashboard for managing complex financial data with clean, intuitive visualizations.",
-        image: project2,
-        features: ["React Integration", "Data Visualization", "User Authentication"],
+        title: "General Orbit",
+        category: "Webflow",
+        description: "A polished Webflow build with dynamic CMS collections, smooth GSAP interactions, and a scalable layout that supports a strong, modern brand presence.",
+        image: generalOrbit,
+        features: ['GSAP', 'CMS', 'Webflow', 'Scroll Animations', 'Dynamic Layout'],
         showInHome: true,
-        link: null
+        link: "https://www.generalorbit.com/"
     },
     {
         id: 3,
-        title: "Cre8ive Agency",
-        category: "Creative Portfolio",
-        description: "A bold, vibrant agency portfolio that breaks the mold with unique layouts and immersive interactions.",
-        image: project3,
-        features: ["Custom Interactions", "Responsive Design", "Client-First Naming"],
+        title: "MyJucas",
+        category: "Webflow",
+        description: "Custom Webflow development with structured CMS content, responsive layouts, and refined motion design for a cohesive digital brand experience.",
+        image: myjucas,
+        features: ['GSAP', 'CMS', 'Webflow', 'Brand Storytelling', 'Motion Design'],
         showInHome: true,
-        link: "" // Testing validation
+        link: "https://myjucas.com/"
     },
     {
         id: 4,
-        title: "HealthCore Platform",
-        category: "Healthcare",
-        description: "A secure, accessible web portal for patients to manage appointments, prescriptions, and health records.",
-        image: project4,
-        features: ["HIPAA Compliant", "Member Portal", "Accessibility Optimized"],
+        title: "Deep Builders",
+        category: "Webflow",
+        description: "A construction industry Webflow platform with CMS-driven project showcases and CRM-connected data workflows - client pipelines, leads, and project details managed in the backend and displayed seamlessly on the frontend.",
+        image: deepBuilders,
+        features: ['GSAP', 'CMS', 'Webflow', 'CRM Data', 'Project Showcase', 'Lead Management', 'Service Pages'],
         showInHome: false,
-        link: null
+        link: "https://www.deepbuilders.com/"
     },
     {
         id: 5,
-        title: "EcoDrive App Landing",
-        category: "SaaS",
-        description: "High-converting landing page for an electric vehicle routing application with dynamic pricing calculators.",
-        image: project5,
-        features: ["API Integration", "Lottie Animations", "Lighthouse Score 99+"],
+        title: "Merchant Xporter",
+        category: "Webflow",
+        description: "Export-focused business website built in Webflow with CMS-managed content, custom interactions, and a performance-first structure for global trade services.",
+        image: merchantXporter,
+        features: ['GSAP', 'CMS', 'Webflow', 'Export Services', 'Lead Generation'],
         showInHome: false,
-        link: null // Testing validation
+        link: "https://merchantxporter.com/"
+    },
+    {
+        id: 6,
+        title: "Taraksh Law",
+        category: "Webflow",
+        description: "Professional law firm website with trust-focused design, CMS-powered practice areas, and elegant GSAP-enhanced interactions across every page.",
+        image: tarakshLaw,
+        features: ['GSAP', 'CMS', 'Webflow', 'Practice Areas CMS', 'Trust-focused UI'],
+        showInHome: false,
+        link: "https://tarakshlaw.com/"
+    },
+    {
+        id: 7,
+        title: "Adam Leipzig",
+        category: "Webflow",
+        description: "Personal brand and media site with rich CMS content, cinematic scroll animations, and a high-impact Webflow build for storytelling and audience engagement.",
+        image: adamLeipzig,
+        features: ['GSAP', 'CMS', 'Webflow', 'Personal Brand', 'Content Hub'],
+        showInHome: false,
+        link: "https://adamleipzig.com/"
+    },
+    {
+        id: 8,
+        title: "InsideVoice",
+        category: "Webflow",
+        description: "A refined Webflow site for HR and Total Rewards communications — clear messaging, structured service sections, and a conversion-focused layout that helps complex benefits and change programs feel simple for employees.",
+        image: insideVoice,
+        features: ['GSAP', 'CMS', 'Webflow', 'HR Communications', 'Benefits Strategy', 'Service Pages'],
+        showInHome: false,
+        link: "https://www.insidevoiceco.com/"
     }
 ];

@@ -3,10 +3,12 @@ import Hero from '../components/home/Hero';
 import Projects from '../components/home/Projects';
 import Cta from '../components/home/CTA';
 import ValueProposition from '../components/home/ValueProposition';
+import SEO from '../components/common/SEO';
 
 const Work = () => {
     return (
         <>
+            <SEO pageKey="work" />
             <div className="pt-12">
                 <Hero
                     title="Real Work. Real Results. "
@@ -22,7 +24,7 @@ const Work = () => {
                 />
             </div>
 
-            <Projects hideAllBtn={true} showAll={true} />
+            <Projects hideAllBtn={true} showAll={true} twoColumnDesktop={true} />
             <ValueProposition />
             <Cta />
 
