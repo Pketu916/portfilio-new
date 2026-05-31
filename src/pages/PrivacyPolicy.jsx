@@ -53,7 +53,7 @@ const PrivacyPolicy = () => {
 
                         <h2 className="text-2xl font-bold text-black mt-8 mb-4">5. Contact Us</h2>
                         <p>
-                            If you have questions about this Privacy Policy, please contact us at: <a href="mailto:pketu916@gmail.com" className="text-color-primary-accessible hover:underline focus-ring">pketu916@gmail.com</a>.
+                            If you have questions about this Privacy Policy, please contact us at: <a href="mailto:pketu916@gmail.com" className="text-color-primary hover:underline">pketu916@gmail.com</a>.
                         </p>
                     </div>
                 </div>

@@ -92,7 +92,7 @@ const About = () => {
                                     "Collaboration builds long-term success"
                                 ].map((belief, index) => (
                                     <li key={index} className="flex items-center gap-4 text-lg md:text-xl font-medium">
-                                        <div className="w-8 h-8 rounded-full bg-color-primary text-on-primary flex items-center justify-center flex-shrink-0">
+                                        <div className="w-8 h-8 rounded-full bg-color-primary text-white flex items-center justify-center flex-shrink-0">
                                             <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M5 13l4 4L19 7" />
                                             </svg>

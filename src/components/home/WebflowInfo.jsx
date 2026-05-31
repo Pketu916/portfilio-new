@@ -55,9 +55,9 @@ const WebflowInfo = () => {
                     <div className="w-full lg:w-7/12">
                         <div className="border-2 border-black bg-white card-shadow">
                             <div className="p-8 md:p-10 border-b-2 border-black">
-                                <h2 className="text-[clamp(2rem,3vw,2.5rem)] font-bold mb-3">
+                                <h3 className="text-[clamp(2rem,3vw,2.5rem)] font-bold mb-3">
                                     Why <span className="italic">Choose Webflow?</span>
-                                </h2>
+                                </h3>
                                 <p className="text-lg opacity-80">
                                     Because your business needs a platform built for speed, scale, and creative freedom.
                                 </p>
@@ -69,13 +69,13 @@ const WebflowInfo = () => {
                                         key={benefit.title}
                                         className="flex gap-6 md:gap-8 p-6 md:p-8 transition-colors duration-300 hover:bg-[#f0f0f0]"
                                     >
-                                        <span className="text-2xl md:text-3xl font-bold leading-none flex-shrink-0 w-10 text-color-primary-accessible">
+                                        <span className="text-2xl md:text-3xl font-bold leading-none flex-shrink-0 w-10 text-color-primary">
                                             {String(index + 1).padStart(2, '0')}
                                         </span>
                                         <div className="flex-1 min-w-0">
-                                            <h3 className="text-xl md:text-2xl font-bold mb-2">
+                                            <h4 className="text-xl md:text-2xl font-bold mb-2">
                                                 {benefit.title}
-                                            </h3>
+                                            </h4>
                                             <p className="opacity-80 text-base md:text-lg leading-relaxed">
                                                 {benefit.desc}
                                             </p>
