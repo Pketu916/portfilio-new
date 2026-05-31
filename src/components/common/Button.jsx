@@ -10,13 +10,15 @@ const Button = ({
     className = '',
     href = null,
     target,
-    rel
+    rel,
+    ariaLabel,
+    disabled = false,
 }) => {
     const variantClass = variant === 'primary'
-        ? 'bg-color-primary text-white'
+        ? 'bg-color-primary text-on-primary'
         : 'bg-white text-black';
 
-    const baseClasses = `button-shadow px-6 py-3 text-base font-semibold cursor-pointer outline-none inline-block text-center ${variantClass} ${className}`;
+    const baseClasses = `button-shadow focus-ring px-6 py-3 text-base font-semibold cursor-pointer outline-none inline-block text-center ${variantClass} ${className}`;
 
     if (href) {
         const external = isExternalLink(href);
@@ -26,6 +28,7 @@ const Button = ({
                 className={baseClasses}
                 target={target ?? (external ? '_blank' : undefined)}
                 rel={rel ?? (external ? 'noopener noreferrer' : undefined)}
+                aria-label={ariaLabel}
             >
                 {children}
             </a>
@@ -37,6 +40,8 @@ const Button = ({
             type={type}
             onClick={onClick}
             className={baseClasses}
+            aria-label={ariaLabel}
+            disabled={disabled}
         >
             {children}
         </button>

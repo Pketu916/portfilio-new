@@ -42,7 +42,7 @@ const Projects = ({ hideAllBtn = false, showAll = false, twoColumnDesktop = fals
                             </div>
 
                             <div className="flex-grow flex flex-col">
-                                <span className="text-color-primary font-bold uppercase tracking-wider text-sm block mb-2">
+                                <span className="text-color-primary-accessible font-bold uppercase tracking-wider text-sm block mb-2">
                                     {project.category}
                                 </span>
                                 <h3 className="text-2xl font-bold mb-3" itemProp="name">{project.title}</h3>
@@ -56,7 +56,7 @@ const Projects = ({ hideAllBtn = false, showAll = false, twoColumnDesktop = fals
                                     <ul className="mt-auto flex flex-wrap gap-x-4 gap-y-2 mb-6 list-none">
                                         {project.features.map((feature, idx) => (
                                             <li key={idx} className="flex items-center gap-2 text-sm font-medium opacity-90">
-                                                <span className="w-1.5 h-1.5 bg-color-primary flex-shrink-0"></span>
+                                                <span className="w-1.5 h-1.5 bg-color-primary-accessible flex-shrink-0" aria-hidden="true"></span>
                                                 {feature}
                                             </li>
                                         ))}
@@ -66,11 +66,16 @@ const Projects = ({ hideAllBtn = false, showAll = false, twoColumnDesktop = fals
 
                             <div className="mt-auto">
                                 {project.link ? (
-                                    <Button variant="secondary" href={project.link} className="w-full">
+                                    <Button
+                                        variant="secondary"
+                                        href={project.link}
+                                        className="w-full"
+                                        ariaLabel={`View ${project.title} project (opens in new tab)`}
+                                    >
                                         View Project
                                     </Button>
                                 ) : (
-                                    <Button variant="secondary" className="w-full opacity-50 cursor-not-allowed">
+                                    <Button variant="secondary" className="w-full opacity-50 cursor-not-allowed" disabled ariaLabel={`${project.title} coming soon`}>
                                         Coming Soon
                                     </Button>
                                 )}

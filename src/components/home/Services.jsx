@@ -100,7 +100,7 @@ const Services = () => {
                                     style={{ zIndex: index + 10 }}
                                 >
                                     <div className="w-full self-center">
-                                        <span className="text-color-primary font-bold text-xl md:mb-2 block">0{index + 1}</span>
+                                        <span className="text-color-primary-accessible font-bold text-xl md:mb-2 block">0{index + 1}</span>
                                         <h3 className="text-[clamp(1.5rem,3vw,2.5rem)] font-bold mb-2 md:mb-4 leading-tight">{service.title}</h3>
                                         <p className="text-base md:text-lg opacity-80 mb-4 md:mb-6 border-b-2 pb-4">{service.subtitle}</p>
                                         <ul className="space-y-2 md:space-y-3">

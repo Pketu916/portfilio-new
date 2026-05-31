@@ -6,6 +6,7 @@
 :root {
   /* Colors */
   --color-primary: #F9583C;
+  --color-primary-accessible: #C73E24;
   --color-white: #ffffff;
   --color-dark: #1a1a1a;
   --color-gray-light: #f4f4f4;
@@ -73,8 +74,16 @@ body {
     color: var(--color-primary);
   }
 
+  .text-color-primary-accessible {
+    color: var(--color-primary-accessible);
+  }
+
   .bg-color-primary {
     background-color: var(--color-primary);
+  }
+
+  .text-on-primary {
+    color: var(--color-dark);
   }
 
   .button-shadow {
@@ -108,6 +117,11 @@ body {
     /* IE and Edge */
     scrollbar-width: none;
     /* Firefox */
+  }
+
+  .focus-ring:focus-visible {
+    outline: 2px solid var(--color-dark);
+    outline-offset: 2px;
   }
 }
 

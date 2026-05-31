@@ -56,9 +56,9 @@ const Navbar = () => {
                                 <Link
                                     key={link.name}
                                     to={link.path}
-                                    className={`text-lg font-medium px-5 py-2.5 border-2 transition-all duration-300 ${isActive(link.path)
-                                        ? 'bg-color-primary text-white card-shadow-sm'
-                                        : 'bg-white text-color-dark hover:bg-color-primary hover:text-white hover:card-shadow-sm'
+                                    className={`text-lg font-medium px-5 py-2.5 border-2 transition-all duration-300 focus-ring ${isActive(link.path)
+                                        ? 'bg-color-primary text-on-primary card-shadow-sm'
+                                        : 'bg-white text-color-dark hover:bg-color-primary hover:text-on-primary hover:card-shadow-sm'
                                         } ${
                                         // Remove left border from subsequent items so borders don't double up when adjacent
                                         link.name !== 'Home' ? '-ml-[2px]' : ''
@@ -71,9 +71,11 @@ const Navbar = () => {
 
                         {/* Mobile Hamburger Icon */}
                         <button
-                            className={`md:hidden flex flex-col justify-center items-center w-8 h-8 space-y-1 focus:outline-none z-50 p-1 relative transition-colors duration-300 ${isOpen ? 'bg-transparent' : 'bg-white'}`}
+                            className={`md:hidden flex flex-col justify-center items-center w-8 h-8 space-y-1 focus-ring z-50 p-1 relative transition-colors duration-300 ${isOpen ? 'bg-transparent' : 'bg-white'}`}
                             onClick={() => setIsOpen(!isOpen)}
-                            aria-label="Toggle menu"
+                            aria-label={isOpen ? 'Close menu' : 'Open menu'}
+                            aria-expanded={isOpen}
+                            aria-controls="mobile-menu"
                         >
                             <span className={`block w-6 h-[3px] transition-all duration-300 ease-in-out ${isOpen ? 'translate-y-[7px] rotate-45 bg-color-primary' : 'bg-color-primary'}`}></span>
                             <span className={`block w-6 h-[3px] transition-opacity duration-300 ease-in-out ${isOpen ? 'opacity-0 bg-color-primary' : 'opacity-100 bg-color-primary'}`}></span>
@@ -85,6 +87,10 @@ const Navbar = () => {
 
             {/* Mobile Menu Dropdown */}
             <div
+                id="mobile-menu"
+                role="navigation"
+                aria-label="Mobile navigation"
+                aria-hidden={!isOpen}
                 className={`fixed inset-0 bg-white border-b-2 border-black transition-transform duration-500 ease-in-out transform ${isOpen ? 'translate-y-0' : '-translate-y-full'
                     } md:hidden flex flex-col justify-center items-center z-40`}
             >
@@ -97,7 +103,7 @@ const Navbar = () => {
                             <Link
                                 to={link.path}
                                 onClick={() => setIsOpen(false)}
-                                className={`text-2xl font-bold transition-colors block ${isActive(link.path) ? 'text-color-primary italic' : 'text-color-dark hover:text-color-primary'
+                                className={`text-2xl font-bold transition-colors block focus-ring ${isActive(link.path) ? 'text-color-primary-accessible italic' : 'text-color-dark hover:text-color-primary-accessible'
                                     }`}
                             >
                                 {link.name}

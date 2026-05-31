@@ -40,7 +40,7 @@ const ValueProposition = () => {
             <Container>
                 <div className="w-full">
                     <h2 className="text-[clamp(2.5rem,5vw,4rem)] mb-12 font-bold leading-[1.1] max-w-[1000px]">
-                        Your website is more than design - <br />
+                        Your website is more than design  <br />
                         <span className="text-color-primary italic">It’s your brand’s digital identity.</span>
                     </h2>
                 </div>
@@ -57,7 +57,7 @@ const ValueProposition = () => {
                         <li
                             key={index}
                             ref={el => listRefs.current[index] = el}
-                            className="group relative overflow-hidden text-[clamp(1.25rem,3vw,1.75rem)] border-b cursor-pointer hover:bg-color-primary hover:text-white transition-all duration-300 w-full"
+                            className="group relative overflow-hidden text-[clamp(1.25rem,3vw,1.75rem)] border-b cursor-pointer hover:bg-color-primary hover:text-on-primary transition-all duration-300 w-full focus-ring"
                         >
                             <Container>
                                 <div className="py-6 flex items-center gap-4 group-hover:opacity-0 transition-opacity duration-300 w-full">
